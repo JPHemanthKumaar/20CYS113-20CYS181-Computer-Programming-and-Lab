@@ -1,0 +1,24 @@
+#include <stdio.h>
+struct complexnumbers
+{
+    int real;
+    int imaginary;
+    int number;
+};
+int main()
+{
+    struct complexnumbers num1;
+    printf("Enter the real part of the number:");
+    scanf("%d", &num1.real);
+    printf("Enter the imaginary part of the number:");
+    scanf("%d", &num1.imaginary);
+    struct complexnumbers num2;
+    printf("Enter the real part:");
+    scanf("%d", &num2.real);
+    printf("Enter the imaginary part:");
+    scanf("%d", &num2.imaginary);
+    printf("The multiplication of these two complex numbers is :");
+    double mult;
+    mult = ((num1.real) * (num2.real)) - ((num1.imaginary) * (num2.imaginary));
+    printf("%f", mult);
+}
